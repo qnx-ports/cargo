@@ -401,7 +401,7 @@ dependencies = [
  "git2",
  "git2-curl",
  "gix",
- "gix-transport",
+ "gix-transport 0.57.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "glob",
  "heck",
  "hex",
@@ -1281,12 +1281,11 @@ dependencies = [
 
 [[package]]
 name = "errno"
-version = "0.3.14"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb"
+version = "0.3.13"
+source = "git+https://github.com/qnx-ports/rust-errno?branch=qnx-0.3.13#e98ab373ecbf3a48ce372f1eb3c3897a9af650a3"
 dependencies = [
  "libc",
- "windows-sys 0.61.2",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -1347,8 +1346,7 @@ checksum = "64cd1e32ddd350061ae6edb1b082d7c54915b5c672c389143b9a63403a109f24"
 [[package]]
 name = "filetime"
 version = "0.2.29"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5c287a33c7f0a620c38e641e7f60827713987b3c0f26e8ddc9462cc69cf75759"
+source = "git+https://github.com/qnx-ports/filetime?branch=qnx-0.2.29#8a0d020ae97e9f988bf235fe0455cbd8405cc46e"
 dependencies = [
  "cfg-if",
  "libc",
@@ -1514,8 +1512,7 @@ dependencies = [
 [[package]]
 name = "getrandom"
 version = "0.2.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ff2abc00be7fca6ebc474524697ae276ad847ad0a6b3faa4bcb027e9a4614ad0"
+source = "git+https://github.com/qnx-ports/getrandom-rs?branch=qnx-0.2.17#c7bbedb96c3080210fc5a5ae7634dce39bce65c6"
 dependencies = [
  "cfg-if",
  "libc",
@@ -1525,8 +1522,7 @@ dependencies = [
 [[package]]
 name = "getrandom"
 version = "0.3.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "899def5c37c4fd7b2664648c28120ecec138e4d395b459e5ca34f9cce2dd77fd"
+source = "git+https://github.com/qnx-ports/getrandom-rs?branch=qnx-0.3.4#e29b9a6b8227f34d5ca511d74ff9881f667f26e2"
 dependencies = [
  "cfg-if",
  "libc",
@@ -1537,8 +1533,7 @@ dependencies = [
 [[package]]
 name = "getrandom"
 version = "0.4.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "300e883d756b2e4ec94e02791f39b04b522276138852cfc41d9fb7e904106099"
+source = "git+https://github.com/qnx-ports/getrandom-rs?branch=qnx-0.4.3#6b863445c8880fc0cac1193bb88d0d051afa8fd4"
 dependencies = [
  "cfg-if",
  "js-sys",
@@ -1578,12 +1573,11 @@ dependencies = [
 [[package]]
 name = "gix"
 version = "0.85.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fa8b2e38ebfc4484dfef8580ddcaf8abb7285e6f3eb6413ff6775d104ae96ca6"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "gix-actor",
  "gix-attributes",
- "gix-command",
+ "gix-command 0.9.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-commitgraph",
  "gix-config",
  "gix-credentials",
@@ -1591,8 +1585,8 @@ dependencies = [
  "gix-diff",
  "gix-dir",
  "gix-discover",
- "gix-error",
- "gix-features",
+ "gix-error 0.2.4 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-features 0.48.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-filter",
  "gix-fs",
  "gix-glob",
@@ -1605,7 +1599,7 @@ dependencies = [
  "gix-object",
  "gix-odb",
  "gix-pack",
- "gix-path",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-pathspec",
  "gix-prompt",
  "gix-protocol",
@@ -1618,12 +1612,12 @@ dependencies = [
  "gix-status",
  "gix-submodule",
  "gix-tempfile",
- "gix-trace",
- "gix-transport",
+ "gix-trace 0.1.20 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-transport 0.57.2 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-traverse",
- "gix-url",
- "gix-utils",
- "gix-validate",
+ "gix-url 0.36.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-utils 0.3.3 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-validate 0.11.2 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-worktree",
  "gix-worktree-stream",
  "nonempty",
@@ -1635,25 +1629,23 @@ dependencies = [
 [[package]]
 name = "gix-actor"
 version = "0.41.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8bc998b8f746dda8565450d08a63b792ced9165d8c27a1ed3f02799ec6a7820f"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bstr",
  "gix-date",
- "gix-error",
+ "gix-error 0.2.4 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
 ]
 
 [[package]]
 name = "gix-attributes"
 version = "0.33.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "39b40888d0ed415c0744a6cdc61eebf0304c9d26ab726725b718443c322e5ba4"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bstr",
  "gix-glob",
- "gix-path",
- "gix-quote",
- "gix-trace",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-quote 0.7.2 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-trace 0.1.20 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "kstring",
  "smallvec",
  "thiserror 2.0.18",
@@ -1663,19 +1655,17 @@ dependencies = [
 [[package]]
 name = "gix-bitmap"
 version = "0.3.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "52ebef0c26ad305747649e727bbcd56a7b7910754eb7cea88f6dff6f93c51283"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
- "gix-error",
+ "gix-error 0.2.4 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
 ]
 
 [[package]]
 name = "gix-chunk"
 version = "0.7.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9faee47943b638e58ddd5e275a4906ad3e4b6c8584f1d41bd18ab9032ec52afb"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
- "gix-error",
+ "gix-error 0.2.4 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
 ]
 
 [[package]]
@@ -1685,21 +1675,32 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "00706d4fef135ef4b01680d5218c6ee40cda8baf697b864296cbc887d19118f6"
 dependencies = [
  "bstr",
- "gix-path",
- "gix-quote",
- "gix-trace",
+ "gix-path 0.12.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "gix-quote 0.7.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "gix-trace 0.1.20 (registry+https://github.com/rust-lang/crates.io-index)",
+ "shell-words",
+]
+
+[[package]]
+name = "gix-command"
+version = "0.9.1"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
+dependencies = [
+ "bstr",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-quote 0.7.2 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-trace 0.1.20 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "shell-words",
 ]
 
 [[package]]
 name = "gix-commitgraph"
 version = "0.37.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7f675d0df484a7f6a47e64bd6f311af489d947c0323b0564f36d14f3d7762abb"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bstr",
  "gix-chunk",
- "gix-error",
+ "gix-error 0.2.4 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-hash",
  "memmap2",
  "nonempty",
@@ -1708,14 +1709,13 @@ dependencies = [
 [[package]]
 name = "gix-config"
 version = "0.58.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a29bf266c4cdaf759e535c24ad4ce655b987aeb6911075643403cc7cc5ade583"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "bstr",
  "gix-config-value",
- "gix-features",
+ "gix-features 0.48.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-glob",
- "gix-path",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-ref",
  "gix-sec",
  "smallvec",
@@ -1726,12 +1726,11 @@ dependencies = [
 [[package]]
 name = "gix-config-value"
 version = "0.18.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ed42168329552f6c2e5df09665c104199d45d84bedb53683738a49b57fe1baab"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bitflags 2.13.0",
  "bstr",
- "gix-path",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "libc",
  "thiserror 2.0.18",
 ]
@@ -1739,29 +1738,27 @@ dependencies = [
 [[package]]
 name = "gix-credentials"
 version = "0.38.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f40cd22f0dd71988be12d6e78b1709de2370e1957c5f107ff31e56caeba3745d"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "bstr",
- "gix-command",
+ "gix-command 0.9.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-config-value",
  "gix-date",
- "gix-path",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-prompt",
  "gix-sec",
- "gix-trace",
- "gix-url",
+ "gix-trace 0.1.20 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-url 0.36.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "thiserror 2.0.18",
 ]
 
 [[package]]
 name = "gix-date"
 version = "0.15.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3d63f9e28b59ddeb1a1eb9e5cf986a9222b5d484947445edbc20473939cc7fd0"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bstr",
- "gix-error",
+ "gix-error 0.2.4 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "itoa 1.0.18",
  "jiff",
 ]
@@ -1769,22 +1766,21 @@ dependencies = [
 [[package]]
 name = "gix-diff"
 version = "0.65.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "92c6d56c94edf92d78203a1cd416f770e35e10b6955ede6b9d7d0c22ff88a5f3"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bstr",
  "gix-attributes",
- "gix-command",
+ "gix-command 0.9.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-filter",
  "gix-fs",
  "gix-hash",
  "gix-imara-diff",
  "gix-index",
  "gix-object",
- "gix-path",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-pathspec",
  "gix-tempfile",
- "gix-trace",
+ "gix-trace 0.1.20 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-traverse",
  "gix-worktree",
  "thiserror 2.0.18",
@@ -1793,8 +1789,7 @@ dependencies = [
 [[package]]
 name = "gix-dir"
 version = "0.27.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "20098fba2b9c6e29361ccb4c0379d42dfb81fc7f86f7ab11f2dff4528c0bf01f"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "bstr",
  "gix-discover",
@@ -1802,10 +1797,10 @@ dependencies = [
  "gix-ignore",
  "gix-index",
  "gix-object",
- "gix-path",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-pathspec",
- "gix-trace",
- "gix-utils",
+ "gix-trace 0.1.20 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-utils 0.3.3 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-worktree",
  "thiserror 2.0.18",
 ]
@@ -1813,13 +1808,12 @@ dependencies = [
 [[package]]
 name = "gix-discover"
 version = "0.53.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d624d5b23b10c1d85337645227abe353ac95ab8ff66a7bdd5ce689b2db33a722"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "bstr",
  "dunce",
  "gix-fs",
- "gix-path",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-ref",
  "gix-sec",
  "thiserror 2.0.18",
@@ -1835,17 +1829,34 @@ dependencies = [
 ]
 
 [[package]]
+name = "gix-error"
+version = "0.2.4"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
+dependencies = [
+ "bstr",
+]
+
+[[package]]
 name = "gix-features"
 version = "0.48.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1849ae154d38bc403185be14fa871e38e3c93ee606875d94e207fdb9fba52dbc"
 dependencies = [
+ "gix-trace 0.1.20 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc",
+]
+
+[[package]]
+name = "gix-features"
+version = "0.48.1"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
+dependencies = [
  "bytes",
  "crc32fast",
  "crossbeam-channel",
- "gix-path",
- "gix-trace",
- "gix-utils",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-trace 0.1.20 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-utils 0.3.3 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "libc",
  "once_cell",
  "parking_lot",
@@ -1858,20 +1869,19 @@ dependencies = [
 [[package]]
 name = "gix-filter"
 version = "0.32.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6644fb2ef97928c278675b239f366b457103d7e436f811d27331a8daf212759c"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bstr",
  "encoding_rs",
  "gix-attributes",
- "gix-command",
+ "gix-command 0.9.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-hash",
  "gix-object",
- "gix-packetline",
- "gix-path",
- "gix-quote",
- "gix-trace",
- "gix-utils",
+ "gix-packetline 0.21.5 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-quote 0.7.2 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-trace 0.1.20 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-utils 0.3.3 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "smallvec",
  "thiserror 2.0.18",
 ]
@@ -1879,37 +1889,34 @@ dependencies = [
 [[package]]
 name = "gix-fs"
 version = "0.21.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6cdff46db8798e47e2f727d84b9379aac5add3dd3d9d0b07bb4d7d5d640771fe"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bstr",
  "fastrand",
- "gix-features",
- "gix-path",
- "gix-utils",
+ "gix-features 0.48.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-utils 0.3.3 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "thiserror 2.0.18",
 ]
 
 [[package]]
 name = "gix-glob"
 version = "0.26.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d1fcb8ef5b16bcf874abe9b68d8abb3c0493c876d367ab824151f30a0f3f3756"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bitflags 2.13.0",
  "bstr",
- "gix-features",
- "gix-path",
+ "gix-features 0.48.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
 ]
 
 [[package]]
 name = "gix-hash"
 version = "0.25.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cb0926d3819c837750b4e03c7754901e73f68b8c9b690753a6372a1bed4eedce"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "faster-hex",
- "gix-features",
+ "gix-features 0.48.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "sha1-checked",
  "thiserror 2.0.18",
 ]
@@ -1917,8 +1924,7 @@ dependencies = [
 [[package]]
 name = "gix-hashtable"
 version = "0.15.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7e261d54091f0d1c729bc83f54548c071bdec60a697de1e58e88bdfd7a99d24e"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "gix-hash",
  "hashbrown 0.17.1",
@@ -1928,21 +1934,19 @@ dependencies = [
 [[package]]
 name = "gix-ignore"
 version = "0.21.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d491bab9bf2c9f341dc754f425c31d5d3f63aca615312167b82e1deeaca97d8d"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bstr",
  "gix-glob",
- "gix-path",
- "gix-trace",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-trace 0.1.20 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "unicode-bom",
 ]
 
 [[package]]
 name = "gix-imara-diff"
 version = "0.2.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b305d85504de270ad3525d726a6b69cc59ee7b2269b014387651107ab9f0755b"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bstr",
  "hashbrown 0.17.1",
@@ -1951,22 +1955,21 @@ dependencies = [
 [[package]]
 name = "gix-index"
 version = "0.53.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "36d45f82ec5a4d7542ea595e9ad16e03e26c8cb4f221e5bc9fcdcf469f63a681"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bitflags 2.13.0",
  "bstr",
  "filetime",
  "fnv",
  "gix-bitmap",
- "gix-features",
+ "gix-features 0.48.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-fs",
  "gix-hash",
  "gix-lock",
  "gix-object",
  "gix-traverse",
- "gix-utils",
- "gix-validate",
+ "gix-utils 0.3.3 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-validate 0.11.2 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "hashbrown 0.17.1",
  "itoa 1.0.18",
  "libc",
@@ -1979,19 +1982,17 @@ dependencies = [
 [[package]]
 name = "gix-lock"
 version = "23.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "65c9dedd9e90b0d47624d2ed241d394e09294118364e87b9b7e5f1fe755f3c2c"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "gix-tempfile",
- "gix-utils",
+ "gix-utils 0.3.3 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "thiserror 2.0.18",
 ]
 
 [[package]]
 name = "gix-negotiate"
 version = "0.33.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "63d6081882a5f575ace9f53924a7c85f69bbd0f96071b982df12f258ab338cc9"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "bitflags 2.13.0",
  "gix-commitgraph",
@@ -2004,17 +2005,16 @@ dependencies = [
 [[package]]
 name = "gix-object"
 version = "0.62.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "019b38afc3eac1e41f9fe09a327664b313ba4a120fa5f40e3678795d0e42783e"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bstr",
  "gix-actor",
  "gix-date",
- "gix-features",
+ "gix-features 0.48.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-hash",
  "gix-hashtable",
- "gix-utils",
- "gix-validate",
+ "gix-utils 0.3.3 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-validate 0.11.2 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "itoa 1.0.18",
  "smallvec",
  "thiserror 2.0.18",
@@ -2023,18 +2023,17 @@ dependencies = [
 [[package]]
 name = "gix-odb"
 version = "0.82.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7fadc59f6fa0f9dd445eceee61060a2b59ca557f48da9fc677f567db535b782a"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "arc-swap",
- "gix-features",
+ "gix-features 0.48.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-fs",
  "gix-hash",
  "gix-hashtable",
  "gix-object",
  "gix-pack",
- "gix-path",
- "gix-quote",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-quote 0.7.2 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "memmap2",
  "parking_lot",
  "tempfile",
@@ -2044,17 +2043,16 @@ dependencies = [
 [[package]]
 name = "gix-pack"
 version = "0.72.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ca3e7f1726cd2c0cd1cf1fc20be8a8e623f0b163f1f8d6fc836cfb9bc8cd758b"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "clru",
  "gix-chunk",
- "gix-error",
- "gix-features",
+ "gix-error 0.2.4 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-features 0.48.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-hash",
  "gix-hashtable",
  "gix-object",
- "gix-path",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-tempfile",
  "memmap2",
  "parking_lot",
@@ -2070,7 +2068,18 @@ checksum = "b217dd0ee0c4021ecf169a4a519b1b4f80d15e3f3765f3dc466223dc0ac891d7"
 dependencies = [
  "bstr",
  "faster-hex",
- "gix-trace",
+ "gix-trace 0.1.20 (registry+https://github.com/rust-lang/crates.io-index)",
+ "thiserror 2.0.18",
+]
+
+[[package]]
+name = "gix-packetline"
+version = "0.21.5"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
+dependencies = [
+ "bstr",
+ "faster-hex",
+ "gix-trace 0.1.20 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "thiserror 2.0.18",
 ]
 
@@ -2081,33 +2090,42 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "afa6ac14cd14939ea94a496ce7460daa6511c09f5b84757e9cfc6f9c8d0f93a6"
 dependencies = [
  "bstr",
- "gix-trace",
- "gix-validate",
+ "gix-trace 0.1.20 (registry+https://github.com/rust-lang/crates.io-index)",
+ "gix-validate 0.11.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "thiserror 2.0.18",
+]
+
+[[package]]
+name = "gix-path"
+version = "0.12.1"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
+dependencies = [
+ "bstr",
+ "gix-trace 0.1.20 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-validate 0.11.2 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "thiserror 2.0.18",
 ]
 
 [[package]]
 name = "gix-pathspec"
 version = "0.18.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3050783b41ee11511e1e8fb35623df81806194f4030395f14f48ea37c2798c9f"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bitflags 2.13.0",
  "bstr",
  "gix-attributes",
  "gix-config-value",
  "gix-glob",
- "gix-path",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "thiserror 2.0.18",
 ]
 
 [[package]]
 name = "gix-prompt"
 version = "0.15.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3ee604d7746080ae7e1023bf47204bcc2c5f307bfbe2306a3c90b1bfd1a2c6d8"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
- "gix-command",
+ "gix-command 0.9.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-config-value",
  "parking_lot",
  "rustix",
@@ -2117,13 +2135,12 @@ dependencies = [
 [[package]]
 name = "gix-protocol"
 version = "0.63.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "978468bae4ea2df20c72db3b20d0bdb548a0c1090b85a83643b553e6e0e041f2"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "bstr",
  "gix-credentials",
  "gix-date",
- "gix-features",
+ "gix-features 0.48.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-hash",
  "gix-lock",
  "gix-negotiate",
@@ -2132,9 +2149,9 @@ dependencies = [
  "gix-refspec",
  "gix-revwalk",
  "gix-shallow",
- "gix-trace",
- "gix-transport",
- "gix-utils",
+ "gix-trace 0.1.20 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-transport 0.57.2 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-utils 0.3.3 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "maybe-async",
  "nonempty",
  "thiserror 2.0.18",
@@ -2147,26 +2164,35 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a6e541fc33cc2b783b7979040d445a0c86a2eca747c8faea4ca84230d06ae6ef"
 dependencies = [
  "bstr",
- "gix-error",
- "gix-utils",
+ "gix-error 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
+ "gix-utils 0.3.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "gix-quote"
+version = "0.7.2"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
+dependencies = [
+ "bstr",
+ "gix-error 0.2.4 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-utils 0.3.3 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
 ]
 
 [[package]]
 name = "gix-ref"
 version = "0.65.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9bbfbce1dfd7d7f8469ddef6d3518376aff664348f153cbe0fc3e58ef993d24e"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "gix-actor",
- "gix-features",
+ "gix-features 0.48.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-fs",
  "gix-hash",
  "gix-lock",
  "gix-object",
- "gix-path",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-tempfile",
- "gix-utils",
- "gix-validate",
+ "gix-utils 0.3.3 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-validate 0.11.2 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "memmap2",
  "thiserror 2.0.18",
 ]
@@ -2174,15 +2200,14 @@ dependencies = [
 [[package]]
 name = "gix-refspec"
 version = "0.43.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7bc36a4fb1a1540b59cf2da498783080743fa274b02a3f19ca444fc4015a9d4f"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "bstr",
- "gix-error",
+ "gix-error 0.2.4 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-glob",
  "gix-hash",
  "gix-revision",
- "gix-validate",
+ "gix-validate 0.11.2 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "smallvec",
  "thiserror 2.0.18",
 ]
@@ -2190,31 +2215,29 @@ dependencies = [
 [[package]]
 name = "gix-revision"
 version = "0.47.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "885075c3c21eb9c06e0be3b3728ba5932c04e1c1011dcee7c81801980e3e986f"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "bitflags 2.13.0",
  "bstr",
  "gix-commitgraph",
  "gix-date",
- "gix-error",
+ "gix-error 0.2.4 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-hash",
  "gix-hashtable",
  "gix-object",
  "gix-revwalk",
- "gix-trace",
+ "gix-trace 0.1.20 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "nonempty",
 ]
 
 [[package]]
 name = "gix-revwalk"
 version = "0.33.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8f11fe7ca2585193d3d70bbe0be175a2008d883a704cc7a55e454e113e689455"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "gix-commitgraph",
  "gix-date",
- "gix-error",
+ "gix-error 0.2.4 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-hash",
  "gix-hashtable",
  "gix-object",
@@ -2225,11 +2248,10 @@ dependencies = [
 [[package]]
 name = "gix-sec"
 version = "0.14.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ab8519976e4c7e486270740a5400369f37940779b80bd1377d94cfa1125d01b3"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "bitflags 2.13.0",
- "gix-path",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "libc",
  "windows-sys 0.61.2",
 ]
@@ -2237,8 +2259,7 @@ dependencies = [
 [[package]]
 name = "gix-shallow"
 version = "0.12.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a292fc2fe548c5dfa575479d16b445b0ddf1dd2f56f1fec6aed386f82553cd97"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "bstr",
  "gix-hash",
@@ -2250,20 +2271,19 @@ dependencies = [
 [[package]]
 name = "gix-status"
 version = "0.32.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "aec3293f75db1212f99217832cbc70c30faeb95cefc97c7f1a17fd3bcf13a72e"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "bstr",
  "filetime",
  "gix-diff",
  "gix-dir",
- "gix-features",
+ "gix-features 0.48.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-filter",
  "gix-fs",
  "gix-hash",
  "gix-index",
  "gix-object",
- "gix-path",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-pathspec",
  "gix-worktree",
  "portable-atomic",
@@ -2273,23 +2293,21 @@ dependencies = [
 [[package]]
 name = "gix-submodule"
 version = "0.32.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a7f9f594f7cbda0b38ba6b633b3e9a7b7901acdc5d27bc186a16633800cd1ac8"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "bstr",
  "gix-config",
- "gix-path",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-pathspec",
  "gix-refspec",
- "gix-url",
+ "gix-url 0.36.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "thiserror 2.0.18",
 ]
 
 [[package]]
 name = "gix-tempfile"
 version = "23.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6ef60812443484e67bf84e444cc71b4c78ae62deb822221774a4fa0c57fdb17f"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "dashmap",
  "gix-fs",
@@ -2305,21 +2323,41 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "44dc45eae785c0eb14173e0f152e6e224dcf4d45b6a6999a3aed22af541ad678"
 
 [[package]]
+name = "gix-trace"
+version = "0.1.20"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
+
+[[package]]
 name = "gix-transport"
 version = "0.57.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "186874f7ad1fb2f9a2f2aa9c2dabc7f9dd087bef74c1a0eee2b4a9cf0248fcb3"
 dependencies = [
+ "bstr",
+ "gix-command 0.9.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "gix-features 0.48.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "gix-packetline 0.21.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "gix-quote 0.7.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "gix-sec",
+ "gix-url 0.36.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "thiserror 2.0.18",
+]
+
+[[package]]
+name = "gix-transport"
+version = "0.57.2"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
+dependencies = [
  "base64",
  "bstr",
  "curl",
- "gix-command",
+ "gix-command 0.9.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-credentials",
- "gix-features",
- "gix-packetline",
- "gix-quote",
+ "gix-features 0.48.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-packetline 0.21.5 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-quote 0.7.2 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-sec",
- "gix-url",
+ "gix-url 0.36.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "reqwest",
  "thiserror 2.0.18",
 ]
@@ -2327,8 +2365,7 @@ dependencies = [
 [[package]]
 name = "gix-traverse"
 version = "0.59.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5062cca8f2977565bbaf666ec31dbdb9bc9d9293beb65f9bec52e6c1121b62a1"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bitflags 2.13.0",
  "gix-commitgraph",
@@ -2348,7 +2385,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "65bb01ec69d55e82ccb7a19e264501ead4e6aac38463a8cebfdd81e22bb67ab2"
 dependencies = [
  "bstr",
- "gix-path",
+ "gix-path 0.12.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "percent-encoding",
+ "thiserror 2.0.18",
+]
+
+[[package]]
+name = "gix-url"
+version = "0.36.1"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
+dependencies = [
+ "bstr",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "percent-encoding",
  "thiserror 2.0.18",
 ]
@@ -2358,6 +2406,15 @@ name = "gix-utils"
 version = "0.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "66c50966184123caf580ffa64e28031a878597f1c7fceb8fe19566c38eb1b771"
+dependencies = [
+ "fastrand",
+ "unicode-normalization",
+]
+
+[[package]]
+name = "gix-utils"
+version = "0.3.3"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bstr",
  "fastrand",
@@ -2374,10 +2431,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "gix-validate"
+version = "0.11.2"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
+dependencies = [
+ "bstr",
+]
+
+[[package]]
 name = "gix-worktree"
 version = "0.54.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "92399ed66f259592050c6ed9dc80105e095a2f8e87e6b83d98aa2e21d8e27036"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#acfa0d4ae570dc34a610f45685ee005ecb99d0dc"
 dependencies = [
  "bstr",
  "gix-attributes",
@@ -2387,24 +2451,23 @@ dependencies = [
  "gix-ignore",
  "gix-index",
  "gix-object",
- "gix-path",
- "gix-validate",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-validate 0.11.2 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
 ]
 
 [[package]]
 name = "gix-worktree-stream"
 version = "0.34.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "55f3a878c89a05470ad98c644b0015777c530da24854dd29e41fe4f41176840f"
+source = "git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0#8437c48e0f9dac0139b3870e9f99d1e95e96455e"
 dependencies = [
  "gix-attributes",
- "gix-error",
- "gix-features",
+ "gix-error 0.2.4 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
+ "gix-features 0.48.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-filter",
  "gix-fs",
  "gix-hash",
  "gix-object",
- "gix-path",
+ "gix-path 0.12.1 (git+https://github.com/qnx-ports/gitoxide?branch=qnx-gix-index-0.53.0)",
  "gix-traverse",
  "parking_lot",
 ]
@@ -3005,9 +3068,8 @@ checksum = "c83bff1d572d6b9aeef67ddfc8448e4a3737909cb28e81f97c791b9018703e52"
 
 [[package]]
 name = "libc"
-version = "0.2.186"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "68ab91017fe16c622486840e4c83c9a37afeff978bd239b5293d61ece587de66"
+version = "0.2.190"
+source = "git+https://github.com/qnx-ports/libc-rs?branch=qnx-0.2.190#0a64510a034d7e91e7fa53deb27d198b10844078"
 
 [[package]]
 name = "libgit2-sys"
@@ -3157,9 +3219,8 @@ dependencies = [
 
 [[package]]
 name = "memmap2"
-version = "0.9.11"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d1219ed1b7f229ee7104d281dd01d6802fe28bb6e95d292942c4daacdeb798c0"
+version = "0.9.12"
+source = "git+https://github.com/qnx-ports/memmap2-rs?branch=qnx-v0.9.12#f70e76235c699d23361d4b83fa244e55935343da"
 dependencies = [
  "libc",
 ]
@@ -4198,8 +4259,7 @@ dependencies = [
 [[package]]
 name = "rustix"
 version = "1.1.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b6fe4565b9518b83ef4f91bb47ce29620ca828bd32cb7e408f0062e9930ba190"
+source = "git+https://github.com/qnx-ports/rustix?branch=qnx-1.1.4#f2f50adc150c59720378f3d27b1645e39662d4d0"
 dependencies = [
  "bitflags 2.13.0",
  "errno",
@@ -4627,9 +4687,8 @@ dependencies = [
 
 [[package]]
 name = "socket2"
-version = "0.6.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "52d1cfed4120b4d927bf7c0f86d2087a4a7d6027c906d9f9d525a80573b9be51"
+version = "0.6.5"
+source = "git+https://github.com/qnx-ports/socket2-rs?branch=qnx-0.6.5#d63220be5ef0e4633f2f5a9246ba4d29f70d8337"
 dependencies = [
  "libc",
  "windows-sys 0.61.2",
